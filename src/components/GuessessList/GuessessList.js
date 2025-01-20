@@ -9,7 +9,7 @@ import {NUM_OF_GUESSES_ALLOWED} from "../../constants";
 
 
 
-function GuessessList({ guesses }) {
+function GuessessList({ guesses, answer }) {
 
 
   return (
@@ -23,6 +23,7 @@ function GuessessList({ guesses }) {
            <Guess
            key={num}
            value={guesses[num] ? guesses[num].value : ""}
+           answer = { answer }
            />
 
 
